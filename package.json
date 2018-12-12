@@ -41,7 +41,7 @@
     "test": "npm run check && npm run lint:src",
     "prebuild": "shx rm -r dist || true",
     "build": "tsc",
-    "prerelease": "git checkout master && git pull origin master",
+    "prerelease": "npm run build",
     "release": "standard-version",
     "postrelease": "git push --follow-tags origin master && npm publish"
   },
