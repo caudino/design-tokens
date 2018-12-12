@@ -15,7 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/contactlab/design-tokens"
   },
-  "license": "Contactlab S.p.A.",
+  "license": "MIT",
   "engines": {
     "node": ">= 8.0",
     "npm": ">= 6.0"
@@ -24,7 +24,8 @@
   "types": "dist/index.d.ts",
   "files": [
     "dist",
-    "README.md"
+    "*.md",
+    "LICENSE"
   ],
   "keywords": [
     "contactlab",
