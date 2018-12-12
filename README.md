@@ -1,4 +1,4 @@
-# Contactlab Design Token
+# Contactlab Design Tokens
 
 [![NPM version](https://www.npmjs.com/package/@contactlab/design-tokens)](https://www.npmjs.com/package/@contactlab/design-tokens)
 
