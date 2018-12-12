@@ -1,7 +1,8 @@
 {
   "name": "@contactlab/design-tokens",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Contactlab Design Tokens - Named entities that store visual design attributes.",
+  "license": "MIT",
   "author": {
     "name": "Contactlab UXD Team",
     "email": "uxd@contactlab.com",
@@ -15,7 +16,6 @@
     "type": "git",
     "url": "git+https://github.com/contactlab/design-tokens"
   },
-  "license": "MIT",
   "engines": {
     "node": ">= 8.0",
     "npm": ">= 6.0"
@@ -32,6 +32,9 @@
     "design-tokens",
     "design-system"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "lint:src": "tslint -p .",
     "check": "tsc --noEmit",
