@@ -3,8 +3,8 @@ const components = {
     tablet: 24,
     desktop: 28
   },
-  footerFancy: 11,
-  footerService: 13
+  fancyFooter: 11,
+  serviceFooter: 13
 };
 
 const messages = {
