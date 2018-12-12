@@ -1,0 +1,57 @@
+{
+  "name": "@contactlab/design-tokens",
+  "version": "0.0.0",
+  "description": "Contactlab Design Tokens - Named entities that store visual design attributes.",
+  "author": {
+    "name": "Contactlab UXD Team",
+    "email": "uxd@contactlab.com",
+    "homepage": "https://ux.contactlab.com/"
+  },
+  "contributors": [
+    "Angela Gargallo <angela.gargallo@contactlab.com>",
+    "Giovanni Tramutola <giovanni.tramutola@contactlab.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contactlab/design-tokens"
+  },
+  "license": "Contactlab S.p.A.",
+  "engines": {
+    "node": ">= 8.0",
+    "npm": ">= 6.0"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "contactlab",
+    "design-tokens",
+    "design-system"
+  ],
+  "scripts": {
+    "lint:src": "tslint -p .",
+    "check": "tsc --noEmit",
+    "test": "npm run check && npm run lint:src",
+    "prebuild": "shx rm -r dist || true",
+    "build": "tsc",
+    "prerelease": "git checkout master && git pull origin master",
+    "release": "standard-version",
+    "postrelease": "git push --follow-tags origin master && npm publish"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "7.2.1",
+    "@commitlint/config-conventional": "7.1.2",
+    "@contactlab/tslint-config": "1.2.0",
+    "husky": "1.2.0",
+    "prettier": "1.15.3",
+    "pretty-quick": "1.8.0",
+    "shx": "0.3.2",
+    "standard-version": "4.4.0",
+    "tslint": "5.11.0",
+    "tslint-config-prettier": "1.17.0",
+    "typescript": "3.2.2"
+  }
+}

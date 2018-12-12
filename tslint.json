@@ -1,0 +1,13 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["@contactlab/tslint-config", "tslint-config-prettier"],
+  "rules": {
+    "callable-types": false,
+    "jsdoc-format": false,
+    "max-classes-per-file": false,
+    "object-literal-sort-keys": false
+  },
+  "linterOptions": {
+    "exclude": ["**/node_modules/**", "*.json", "**/*.json"]
+  }
+}
