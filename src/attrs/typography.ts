@@ -13,8 +13,8 @@ export const messages = {
     desktop: 16
   },
   title: {
-    tablet: 20,
-    desktop: 24
+    tablet: 24,
+    desktop: 26
   }
 };
 
