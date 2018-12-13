@@ -1,6 +1,10 @@
-function paddingCompose(padding: number[]): string {
-  const [top = 0, right = 0, bottom = 0, left = 0] = padding;
-  return `${top}px ${right}px ${bottom}px ${left}px`;
+function paddingCompose(arr: number[]): string {
+  if (arr.length >= 1 && arr.length <= 4) {
+    const paddingVal = arr.map(val => `${val}px`);
+    return paddingVal.join(' ');
+  } else {
+    return '0';
+  }
 }
 
 export default {
