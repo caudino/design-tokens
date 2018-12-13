@@ -10,7 +10,8 @@ const shell = {
 
 const page = {
   headerPadding: [16, 24, 16],
-  contentPadding: 24
+  contentPadding: 24,
+  cardMarginBottom: 24
 };
 
 export default {
