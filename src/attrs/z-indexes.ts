@@ -1,4 +1,4 @@
 export default {
-  appHeader: 99,
-  antdNotification: 98
+  antdNotification: 98,
+  appHeader: 99
 };

@@ -1,3 +1,5 @@
+import {roundMQ} from '../helpers/misc';
+
 const MQ = {
   xs: 320,
   sm: 576,
@@ -5,10 +7,6 @@ const MQ = {
   lg: 992,
   xl: 1200
 };
-
-function roundMQ(mq: number): number {
-  return mq - 0.02;
-}
 
 const range = {
   extraSmall: `(max-width: ${MQ.xs})`, // Extra small devices (phones, less than 768px)

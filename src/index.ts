@@ -4,13 +4,13 @@ import legacyPalette from './attrs/colors/legacy-palette';
 const colors = {default: defaultPalette, legacy: legacyPalette};
 
 // --- Miscellaneous attributes
-import layoutSizes from './attrs/layout-sizes';
+import * as layoutSizes from './attrs/layout-sizes';
 import mediaQueries from './attrs/media-queries';
-import typography from './attrs/typography';
+import * as typography from './attrs/typography';
 import zIndexes from './attrs/z-indexes';
 
 // --- Helpers
-import layoutHelpers from './helpers/layout';
+import * as layoutHelpers from './helpers/layout';
 export const helpers = {
   layout: layoutHelpers
 };
