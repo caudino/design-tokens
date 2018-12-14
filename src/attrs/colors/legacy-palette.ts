@@ -17,6 +17,6 @@ export default {
   neutral200: 'rgba(230, 233, 237, 1)',
   neutral300: 'rgba(204, 209, 217, 1)',
   neutral400: 'rgba(170, 178, 189, 1)',
-  neutral500: 'rgba(102, 85, 221, 1)',
+  neutral500: 'rgba(101, 109, 120, 1)',
   neutral600: 'rgba(67, 74, 90, 1)'
 };
