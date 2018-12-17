@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.0.0"></a>
+
+# [2.0.0](https://github.com/contactlab/design-tokens/compare/v1.2.3...v2.0.0) (2018-12-17)
+
+### Features
+
+- add custom scrollbar snippet in misc helpers ([45d86fa](https://github.com/contactlab/design-tokens/commit/45d86fa))
+- move getter palette function under specific folder ([ece7065](https://github.com/contactlab/design-tokens/commit/ece7065))
+- **palette-schema:** update ts interface ([f345fdc](https://github.com/contactlab/design-tokens/commit/f345fdc))
+
+### BREAKING CHANGES
+
+- New getPalette function API.
+
 <a name="1.2.3"></a>
 
 ## [1.2.3](https://github.com/contactlab/design-tokens/compare/v1.2.2...v1.2.3) (2018-12-14)
