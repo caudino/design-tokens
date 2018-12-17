@@ -1,4 +1,6 @@
-export default {
+import {PaletteSchema} from './palette-shema';
+
+export const defaultPalette: PaletteSchema = {
   // --- Base
   base: 'rgba(255, 255, 255, 1)',
 

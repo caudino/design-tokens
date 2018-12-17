@@ -1,9 +1,10 @@
 // --- Color palettes
-import defaultPalette from '../attrs/colors/default-palette';
-import legacyPalette from '../attrs/colors/legacy-palette';
+import {defaultPalette} from '../attrs/colors/default-palette';
+import {legacyPalette} from '../attrs/colors/legacy-palette';
+import {PaletteSchema} from '../attrs/colors/palette-shema';
 
 const colors = {default: defaultPalette, legacy: legacyPalette};
 
-export function getColorPalette(theme: 'default' | 'legacy') {
+export function getColorPalette(theme: 'default' | 'legacy'): PaletteSchema {
   return colors[theme];
 }
