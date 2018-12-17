@@ -1,6 +1,6 @@
 // --- Helpers
 import * as layoutHelpers from './helpers/layout';
-import * as colorsHelpers from './helpers/misc';
+import * as colorHelpers from './helpers/misc';
 import * as miscHelpers from './helpers/misc';
 
 // --- Miscellaneous attributes
@@ -10,7 +10,7 @@ import * as typography from './attrs/typography';
 import zIndexes from './attrs/z-indexes';
 
 export const helpers = {
-  colors: colorsHelpers,
+  color: colorHelpers,
   layout: layoutHelpers,
   misc: miscHelpers
 };

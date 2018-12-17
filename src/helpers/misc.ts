@@ -1,4 +1,4 @@
-import {getColorPalette} from './colors';
+import {getColorPalette} from './color';
 const colors = getColorPalette('default');
 
 export function roundMQ(mq: number): number {
