@@ -1,5 +1,5 @@
-import {getColorPalette} from './color';
-const colors = getColorPalette('default');
+import {getPalette} from './color';
+const colors = getPalette('default');
 
 export function roundMQ(mq: number): number {
   return mq - 0.02;

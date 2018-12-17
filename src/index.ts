@@ -1,6 +1,6 @@
 // --- Helpers
+import * as colorHelpers from './helpers/color';
 import * as layoutHelpers from './helpers/layout';
-import * as colorHelpers from './helpers/misc';
 import * as miscHelpers from './helpers/misc';
 
 // --- Miscellaneous attributes
