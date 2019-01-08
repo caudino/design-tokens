@@ -3,6 +3,10 @@ export const antd = {
   tableMarginBottom: 28
 };
 
+export const components = {
+  radioTabsNavMarginBottom: 24
+};
+
 export const page = {
   cardMarginBottom: 24,
   contentPadding: 24,
