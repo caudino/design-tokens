@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.1.0"></a>
+
+# [3.1.0](https://github.com/contactlab/design-tokens/compare/v3.0.3...v3.1.0) (2019-01-08)
+
+### Features
+
+- add radioTabsNavMarginBottom size property ([4f1b1f7](https://github.com/contactlab/design-tokens/commit/4f1b1f7))
+
 <a name="3.0.3"></a>
 
 ## [3.0.3](https://github.com/contactlab/design-tokens/compare/v3.0.2...v3.0.3) (2018-12-20)
