@@ -1,5 +1,5 @@
 {
-  "eslint.enable": true,
+  "eslint.enable": false,
   "prettier.bracketSpacing": false,
   "prettier.singleQuote": true,
   "[javascript]": {
