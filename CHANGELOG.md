@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.2.0"></a>
+
+# [3.2.0](https://github.com/contactlab/design-tokens/compare/v3.1.1...v3.2.0) (2019-01-15)
+
+### Features
+
+- **layout-sizes:** add tableBtnMarginTop property ([8e8cc86](https://github.com/contactlab/design-tokens/commit/8e8cc86))
+
 <a name="3.1.1"></a>
 
 ## [3.1.1](https://github.com/contactlab/design-tokens/compare/v3.1.0...v3.1.1) (2019-01-08)
