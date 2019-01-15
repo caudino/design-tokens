@@ -4,7 +4,8 @@ export const antd = {
 
 export const components = {
   radioTabsNavMarginBottom: 24,
-  tableBtnMarginTop: 28
+  tableBtnMarginTop: 28,
+  tableHeadMarginBottom: 24
 };
 
 export const page = {
