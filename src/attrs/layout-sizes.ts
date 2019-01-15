@@ -1,10 +1,10 @@
 export const antd = {
-  notificationPadding: 16,
-  tableMarginBottom: 28
+  notificationPadding: 16
 };
 
 export const components = {
-  radioTabsNavMarginBottom: 24
+  radioTabsNavMarginBottom: 24,
+  tableBtnMarginTop: 28
 };
 
 export const page = {
