@@ -1,4 +1,5 @@
 export const antd = {
+  badgeDotSize: 8,
   notificationPadding: 16
 };
 
