@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.4.0"></a>
+
+# [3.4.0](https://github.com/contactlab/design-tokens/compare/v3.3.0...v3.4.0) (2019-01-16)
+
+### Features
+
+- **layout-sizes:** add badgeDotSize property ([88ae497](https://github.com/contactlab/design-tokens/commit/88ae497))
+
 <a name="3.3.0"></a>
 
 # [3.3.0](https://github.com/contactlab/design-tokens/compare/v3.2.0...v3.3.0) (2019-01-15)
