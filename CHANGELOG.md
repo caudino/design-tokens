@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.0.0"></a>
+
+# [4.0.0](https://github.com/contactlab/design-tokens/compare/v3.4.1...v4.0.0) (2019-01-25)
+
+### Features
+
+- remove export default ([4de138c](https://github.com/contactlab/design-tokens/commit/4de138c))
+
+### BREAKING CHANGES
+
+- change constant namespace and exports
+
 <a name="3.4.1"></a>
 
 ## [3.4.1](https://github.com/contactlab/design-tokens/compare/v3.4.0...v3.4.1) (2019-01-16)
