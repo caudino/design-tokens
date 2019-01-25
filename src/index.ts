@@ -17,8 +17,8 @@ export const helpers = {
 // --- Design Tokens
 export const designTokens = {
   palettes,
-  mq: mediaQueries,
-  sizes: layoutSizes,
-  typo: typography,
-  z: zIndexes
+  zIndexes,
+  mediaQueries,
+  layoutSizes,
+  typography
 };
