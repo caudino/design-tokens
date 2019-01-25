@@ -3,11 +3,11 @@ import * as layoutHelpers from './helpers/layout';
 import * as miscHelpers from './helpers/misc';
 
 // --- Attributes
-import * as colors from './attrs/colors';
+import {colors} from './attrs/colors';
 import * as layoutSizes from './attrs/layout-sizes';
 import * as mediaQueries from './attrs/media-queries';
 import * as typography from './attrs/typography';
-import * as zIndexes from './attrs/z-indexes';
+import {zIndexes} from './attrs/z-indexes';
 
 export const helpers = {
   layout: layoutHelpers,
