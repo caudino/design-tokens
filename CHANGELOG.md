@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.0.1"></a>
+
+## [4.0.1](https://github.com/contactlab/design-tokens/compare/v4.0.0...v4.0.1) (2019-01-25)
+
+### Bug Fixes
+
+- colors and z-index export ([8ef3751](https://github.com/contactlab/design-tokens/commit/8ef3751))
+
 <a name="4.0.0"></a>
 
 # [4.0.0](https://github.com/contactlab/design-tokens/compare/v3.4.1...v4.0.0) (2019-01-25)
