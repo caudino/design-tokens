@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.0.0"></a>
+
+# [5.0.0](https://github.com/contactlab/design-tokens/compare/v4.0.3...v5.0.0) (2019-01-25)
+
+### Bug Fixes
+
+- rename design-tokens properties ([5a9fe27](https://github.com/contactlab/design-tokens/commit/5a9fe27))
+
+### BREAKING CHANGES
+
+- rename design-tokens properties
+
 <a name="4.0.3"></a>
 
 ## [4.0.3](https://github.com/contactlab/design-tokens/compare/v4.0.2...v4.0.3) (2019-01-25)
