@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.1.0"></a>
+
+# [5.1.0](https://github.com/contactlab/design-tokens/compare/v5.0.0...v5.1.0) (2019-02-11)
+
+### Features
+
+- **layout-sizes:** add sider trigger height ([54c3a83](https://github.com/contactlab/design-tokens/commit/54c3a83))
+
 <a name="5.0.0"></a>
 
 # [5.0.0](https://github.com/contactlab/design-tokens/compare/v4.0.3...v5.0.0) (2019-01-25)
