@@ -17,5 +17,6 @@ export const page = {
 
 export const shell = {
   headerHeight: 64,
-  headerPadding: [0, 24]
+  headerPadding: [0, 24],
+  triggerCollapseHeight: 70
 };
