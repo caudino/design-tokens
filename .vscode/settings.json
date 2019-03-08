@@ -1,54 +1,17 @@
 {
-  "eslint.enable": false,
-  "prettier.bracketSpacing": false,
-  "prettier.singleQuote": true,
+  "eslint.enable": true,
+  "files.associations": {
+    "*.pcss": "postcss"
+  },
   "[javascript]": {
     "editor.formatOnSave": true
   },
-  "[javascriptreact]": {
-    "editor.formatOnSave": true
-  },
-  "[json]": {
+  "[css]": {
     "editor.formatOnSave": true
   },
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
     "editor.quickSuggestions": true,
     "editor.formatOnSave": true
-  },
-  "todohighlight.isEnable": true,
-  "todohighlight.keywords": [
-    {
-      "text": "NOTE:",
-      "color": "#FFF",
-      "border": "5px solid #FFA04D",
-      "borderRadius": "2px",
-      "backgroundColor": "#FFA04D",
-      "isWholeLine": false
-    },
-    {
-      "text": "REVIEW:",
-      "color": "#FFF",
-      "border": "5px solid #FF5260",
-      "borderRadius": "2px",
-      "backgroundColor": "#FF5260",
-      "isWholeLine": false
-    },
-    {
-      "text": "TRANSFER:",
-      "color": "#FFF",
-      "border": "5px solid #48E639",
-      "borderRadius": "2px",
-      "backgroundColor": "#48E639",
-      "isWholeLine": false
-    },
-    {
-      "text": "TODO:",
-      "color": "#FFF",
-      "border": "5px solid #549bFF",
-      "borderRadius": "2px",
-      "backgroundColor": "#549bFF",
-      "isWholeLine": false
-    }
-  ]
+  }
 }

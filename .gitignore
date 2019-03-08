@@ -1,12 +1,13 @@
 ###############
 #-- Project --#
 ###############
+.tmp
 dist
 node_modules
 
-##############
-#-- Win OS --#
-##############
+###########
+#-- Win --#
+###########
 Thumbs.db
 ehthumbs.db
 ehthumbs_vista.db
@@ -20,9 +21,9 @@ $RECYCLE.BIN/
 *.msp
 *.lnk
 
-##############
-#-- Mac OS --#
-##############
+###########
+#-- Mac --#
+###########
 .DS_Store
 .AppleDouble
 .LSOverride
