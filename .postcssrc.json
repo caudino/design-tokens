@@ -1,0 +1,28 @@
+{
+  "plugins": {
+    "postcss-import": {
+      "skipDuplicates": true
+    },
+    "cssnano": {
+      "preset": [
+        "default",
+        {
+          "discardComments": {
+            "removeAll": true
+          }
+        }
+      ]
+    },
+    "autoprefixer": {
+      "grid": true,
+      "browsers": [
+        "last 2 versions",
+        "not ie <= 11",
+        "not op_mini all",
+        "not dead",
+        "not < 0.5%"
+      ]
+    },
+    "postcss-nested": {}
+  }
+}
