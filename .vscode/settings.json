@@ -1,20 +1,18 @@
 {
   "prettier.bracketSpacing": false,
   "prettier.singleQuote": true,
-  "eslint.enable": true,
-  "eslint.validate": ["javascript", "html"],
   "files.associations": {
     "*.pcss": "postcss"
   },
   "[css]": {
     "editor.formatOnSave": true
   },
-  "[javascript]": {
+  "[postcss]": {
     "editor.formatOnSave": true
   },
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
     "editor.quickSuggestions": true,
     "editor.formatOnSave": true
-  },
+  }
 }
