@@ -30,9 +30,11 @@
   },
   "scripts": {
     "lint:css": "stylelint ./src/**/*.pcss",
+    "lint": "npm run lint:css",
     "clean": "shx rm -r dist || true",
-    "build": "postcss \"src/**/*.pcss\" --base \"src\" --dir \"dist\" --ext \".css\"",
-    "prerelease": "npm run lint:css && npm run build",
+    "build:css": "postcss \"src/**/*.pcss\" --base \"src\" --dir \"dist\" --ext \".css\"",
+    "build": "npm run build:css",
+    "prerelease": "npm run lint && npm run build",
     "release": "np"
   },
   "devDependencies": {
