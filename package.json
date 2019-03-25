@@ -29,27 +29,37 @@
     "access": "public"
   },
   "scripts": {
-    "lint:css": "stylelint ./src/**/*.pcss",
-    "lint": "npm run lint:css",
+    "lint:css": "stylelint \"src/**/*.pcss\"",
+    "lint:ts": "tslint -p .",
+    "lint": "run-p lint:*",
+    "types:check": "tsc --noEmit",
+    "test": "npm run types:check",
     "clean": "shx rm -r dist || true",
+    "build:ts": "tsc",
     "build:css": "postcss \"src/**/*.pcss\" --base \"src\" --dir \"dist\" --ext \".css\"",
-    "build": "npm run build:css",
-    "prerelease": "npm run lint && npm run build",
+    "prebuild": "npm run clean",
+    "build": "run-p build:*",
+    "prerelease": "run-s lint build",
     "release": "np"
   },
   "devDependencies": {
+    "@contactlab/tslint-config": "1.3.0",
     "autoprefixer": "9.5.0",
     "cssnano": "4.1.10",
     "husky": "1.3.1",
     "np": "4.0.2",
+    "npm-run-all": "4.1.5",
     "postcss-cli": "6.1.2",
     "postcss-import": "12.0.1",
     "postcss-nested": "4.1.2",
     "prettier": "1.16.4",
     "pretty-quick": "1.10.0",
     "shx": "0.3.2",
+    "stylelint": "9.10.1",
     "stylelint-config-pack": "2.0.0",
-    "stylelint": "9.10.1"
+    "tslint": "5.14.0",
+    "tslint-config-prettier": "1.18.0",
+    "typescript": "3.3.4000"
   },
   "keywords": [
     "contactlab",
