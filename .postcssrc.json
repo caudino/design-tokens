@@ -3,16 +3,6 @@
     "postcss-import": {
       "skipDuplicates": true
     },
-    "cssnano": {
-      "preset": [
-        "default",
-        {
-          "discardComments": {
-            "removeAll": true
-          }
-        }
-      ]
-    },
     "autoprefixer": {
       "grid": true,
       "browsers": [
