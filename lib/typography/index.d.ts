@@ -7,5 +7,5 @@
 
 export declare const fonts: {
   fontMonospace: string[];
-  fontSanSerif: string[];
+  fontSansSerif: string[];
 };
