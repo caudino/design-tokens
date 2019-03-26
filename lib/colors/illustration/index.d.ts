@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-export declare const defaultPalette: {
+export declare const illustrationsPalette: {
   colorFluoAccent: string;
   colorFluoBase: string;
 };
