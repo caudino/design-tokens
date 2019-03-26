@@ -5,7 +5,10 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-:root {
-  --fluo-accent-color: #00c9bd;
-  --fluo-base-color: #7168ff;
-}
+export declare const breakpoints: {
+  breakpointXS: string;
+  breakpointSM: string;
+  breakpointMD: string;
+  breakpointLG: string;
+  breakpointXL: string;
+};
