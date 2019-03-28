@@ -27,6 +27,7 @@ export declare const defaultPalette: {
   colorBase900: string;
   colorBase: string;
   colorWarning: string;
+  colorSuccess: string;
   colorError: string;
   colorWhite: string;
   colorBlack: string;
