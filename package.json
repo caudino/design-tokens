@@ -30,7 +30,7 @@
   "scripts": {
     "lint:css": "stylelint src/css/**/*.{css,less,scss}",
     "minify:css": "postcss src/css/**/*.{css,less,scss} --base=src --dir=dist",
-    "minify:svg": "svgo src/illustrations/*.svg --output=dist/illustrations",
+    "minify:svg": "svgo src/illustrations/*.svg --output=dist/illustrations --disable=inlineStyles",
     "build": "run-p -cln minify:css minify:svg",
     "prerelease": "npm run lint:css && npm run build",
     "release": "np"
