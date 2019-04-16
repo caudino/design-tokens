@@ -20,7 +20,7 @@
     "npm": ">=5.0"
   },
   "files": [
-    "lib",
+    "dist",
     "*.md",
     "LICENSE"
   ],
@@ -28,19 +28,26 @@
     "access": "public"
   },
   "scripts": {
-    "lint:css": "stylelint \"lib/**/*.{css,less,scss}\"",
-    "prerelease": "npm run lint:css",
+    "lint:css": "stylelint src/css/**/*.{css,less,scss}",
+    "minify:css": "postcss src/css/**/*.{css,less,scss} --base=src --dir=dist",
+    "minify:svg": "svgo src/illustrations/*.svg --output=dist/illustrations",
+    "build": "run-p -cln minify:css minify:svg",
+    "prerelease": "npm run lint:css && npm run build",
     "release": "np"
   },
   "devDependencies": {
-    "autoprefixer": "9.5.0",
     "cssnano": "4.1.10",
+    "cssnano-preset-advanced": "4.0.7",
     "husky": "1.3.1",
     "np": "4.0.2",
-    "prettier": "1.16.4",
+    "npm-run-all": "4.1.5",
+    "postcss-cli": "6.1.2",
+    "postcss-nested": "4.1.2",
+    "prettier": "1.17.0",
     "pretty-quick": "1.10.0",
-    "stylelint": "9.10.1",
-    "stylelint-config-pack": "2.0.0"
+    "stylelint": "10.0.1",
+    "stylelint-config-pack": "2.0.0",
+    "svgo": "1.2.1"
   },
   "keywords": [
     "contactlab",

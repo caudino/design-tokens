@@ -1,6 +1,7 @@
 {
-  "prettier.bracketSpacing": false,
-  "prettier.singleQuote": true,
+  "[svg]": {
+    "editor.formatOnSave": true
+  },
   "[css]": {
     "editor.formatOnSave": true
   },
@@ -10,7 +11,7 @@
   "[less]": {
     "editor.formatOnSave": true
   },
-  "[javascript]": {
+  "[json]": {
     "editor.formatOnSave": true
   },
   "[markdown]": {
