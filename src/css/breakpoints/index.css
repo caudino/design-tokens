@@ -5,10 +5,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-:root {
-  --breakpoint-xs: 320px;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-}
+@custom-media --xsmall-viewport (max-width: 320px);
+@custom-media --small-viewport (max-width: 576px);
+@custom-media --medium-viewport (max-width: 768px);
+@custom-media --large-viewport (max-width: 992px);
+@custom-media --xlarge-viewport (max-width: 1200px);

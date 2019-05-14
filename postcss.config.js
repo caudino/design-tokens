@@ -2,6 +2,7 @@
 
 const cssnano = require('cssnano');
 const postcssNested = require('postcss-nested');
+const postcssCustomMedia = require('postcss-custom-media');
 
 module.exports = {
   plugins: [
@@ -22,6 +23,7 @@ module.exports = {
         }
       ]
     }),
-    postcssNested
+    postcssNested,
+    postcssCustomMedia({preserve: false})
   ]
 };
