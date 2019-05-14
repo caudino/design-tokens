@@ -24,6 +24,6 @@ module.exports = {
       ]
     }),
     postcssNested,
-    postcssCustomMedia({preserve: false})
+    postcssCustomMedia({preserve: true})
   ]
 };
