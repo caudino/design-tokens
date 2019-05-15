@@ -38,7 +38,7 @@
   "devDependencies": {
     "cssnano": "4.1.10",
     "cssnano-preset-advanced": "4.0.7",
-    "husky": "2.2.0",
+    "husky": "2.3.0",
     "np": "5.0.1",
     "postcss-cli": "6.1.2",
     "postcss-custom-media": "7.0.8",
