@@ -1,12 +1,14 @@
 # Contactlab Design Tokens
 
-[![npm][npm-badge]][npm-badge-url]
-
 Named entities that store visual design info, in order to maintain a scalable, consistent system for UI development.
 
----
+[![npm][npm-badge]][npm-badge-url]
 
-Docs coming soon... 🚧
+> Docs coming soon... 🚧
 
-[npm-badge]: https://img.shields.io/npm/v/@contactlab/design-tokens.svg
+## Licence
+
+MIT
+
+[npm-badge]: https://badgen.net/npm/v/@contactlab/design-tokens
 [npm-badge-url]: https://www.npmjs.com/package/@contactlab/design-tokens
