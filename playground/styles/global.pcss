@@ -1,0 +1,81 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/gridly/1.4.13/gridly.min.css';
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 4rem;
+
+  .col {
+    padding: 1rem 2rem;
+  }
+
+  section {
+    margin-bottom: 6.8rem;
+  }
+
+  small {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.intro {
+  display: flex;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid var(--color-base200);
+  padding-bottom: 4rem;
+}
+
+.intro-title {
+  margin-bottom: 0;
+  flex: 0 0 33.333%;
+  color: var(--color-accent);
+}
+
+.intro-description {
+  margin-bottom: 0;
+  margin-left: 2.8rem;
+}
+
+.resource-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.resource-card {
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 2.5rem;
+  border-radius: 0.5rem;
+  padding: 1.4rem 0 1.4rem 6rem;
+  position: relative;
+  box-shadow: var(--shadow-elevation-1dp);
+  text-decoration: none;
+  transition: var(--shadow-transition);
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: var(--shadow-elevation-2dp);
+  }
+
+  img {
+    display: inline-block;
+    height: 28px;
+    position: absolute;
+    top: 50%;
+    left: 3rem;
+    transform: translate(-50%, -50%);
+  }
+
+  &--round img {
+    border-radius: 50%;
+  }
+}
+
+.notes {
+  margin-top: 4rem;
+  color: var(--color-base600);
+  font-size: 1.2rem;
+  line-height: 1.4em;
+}

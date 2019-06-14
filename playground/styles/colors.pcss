@@ -1,0 +1,59 @@
+.color-palette {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.color-card {
+  width: calc(100% / 2);
+  height: 6rem;
+  position: relative;
+
+  strong,
+  code {
+    position: absolute;
+    left: 1.4rem;
+  }
+
+  strong {
+    top: 0.8rem;
+  }
+
+  code {
+    bottom: 0.8rem;
+  }
+
+  &[class*='bgcolor-base' i]:nth-last-child(-n + 6),
+  &[class*='bgcolor-accent' i]:nth-last-child(-n + 6) {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  &[class*='bgcolor-fluo' i]:nth-child(3n):nth-child(n + 3):nth-child(-n + 6),
+  &.bgcolor-success,
+  &.bgcolor-warning,
+  &.bgcolor-error {
+    color: var(--color-white);
+  }
+
+  &.bgcolor-base900,
+  &.bgcolor-accent500,
+  &.bgcolor-fluo-base900,
+  &.bgcolor-fluo-accent900,
+  &.bgcolor-success,
+  &.bgcolor-warning,
+  &.bgcolor-error {
+    width: 100%;
+    color: var(--color-white);
+  }
+
+  &.bgcolor-base900,
+  &.bgcolor-accent500,
+  &.bgcolor-fluo-base900 {
+    order: -1;
+  }
+
+  &.bgcolor-fluo-accent300,
+  &.bgcolor-fluo-accent600 {
+    order: 1;
+  }
+}

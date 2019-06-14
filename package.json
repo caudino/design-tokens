@@ -10,43 +10,47 @@
   "contributors": [
     "Giovanni Tramutola <giovanni.tramutola@contactlab.com>"
   ],
+  "homepage": "https://github.com/contactlab/design-tokens#readme",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/contactlab/design-tokens"
   },
   "engines": {
-    "node": ">=8.0",
-    "npm": ">=5.0"
+    "node": ">=10.0",
+    "npm": ">=6.0"
   },
-  "files": [
-    "dist",
-    "*.md",
-    "LICENSE"
-  ],
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "lib",
+    "*.md",
+    "LICENSE"
+  ],
   "scripts": {
-    "lint:css": "stylelint src/css/**/*.{css,less,scss}",
-    "minify:css": "postcss src/css/**/*.{css,less,scss} --base=src --dir=dist",
-    "minify:svg": "svgo --folder=src/illustrations --output=dist/illustrations --disable=inlineStyles",
-    "build": "npm run minify:css && npm run minify:svg",
-    "prerelease": "npm run lint:css && npm run build",
-    "release": "np"
+    "prettify": "prettier --write \"**/*.{html,pcss,less,scss}\" --ignore-path .gitignore",
+    "lint:css": "stylelint ./**/*.{pcss,less,scss}",
+    "test": "run-s lint:*",
+    "build:css": "postcss ./lib/styles/{colors,resets,typography}/*.pcss --base ./lib/styles --dir ./lib/styles --ext css",
+    "build:svg": "svgo --folder ./lib/illustrations/ --output ./lib/illustrations/min/ --disable inlineStyles",
+    "build": "run-p -cln build:*",
+    "start": "start-storybook --static-dir ./lib,./playground/assets --port 9001",
+    "release": "run-s -cln test build np"
   },
   "devDependencies": {
-    "cssnano": "4.1.10",
-    "cssnano-preset-advanced": "4.0.7",
-    "husky": "2.3.0",
-    "np": "5.0.1",
-    "postcss-cli": "6.1.2",
-    "postcss-custom-media": "7.0.8",
-    "postcss-nested": "4.1.2",
-    "prettier": "1.17.1",
-    "pretty-quick": "1.10.0",
-    "stylelint": "10.0.1",
-    "stylelint-config-pack": "3.1.0",
+    "@babel/core": "7.4.5",
+    "@storybook/html": "5.1.7",
+    "babel-loader": "8.0.6",
+    "husky": "2.4.1",
+    "np": "5.0.3",
+    "npm-run-all": "4.1.5",
+    "postcss-config-pack": "0.3.0",
+    "prettier": "1.18.2",
+    "pretty-quick": "1.11.0",
+    "pug": "2.0.3",
+    "pug-html-loader": "1.1.5",
+    "stylelint-config-pack": "4.1.2",
     "svgo": "1.2.2"
   },
   "keywords": [

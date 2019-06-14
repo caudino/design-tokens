@@ -1,0 +1,84 @@
+extends ../commons/layout.pug
+
+block config
+  - const PAGE_TITLE = "The Type Token";
+
+block content
+
+  +renderIntro({
+    title: PAGE_TITLE,
+    description: `In general, text elements and typography play a very important role, and represent one of the main ways of conveying information from one point to another. As a result, we decided to shape a user’s experience right down to this level. Our visual language uses the same font as the one that is available and enabled by default, in the operating system the user employs. In this way, we attempt to make the characters immediately recognizable and avoid any potential text assimilation or reading issues.`
+  })
+
+
+  .row
+    .col.col-fifth
+      h1 Montserrat Font
+
+    .col
+      section.specimen-chars
+        - const chars = ['A', 'B', 'C', 'Č', 'Ć', 'D', 'Đ', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'Š', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'Ž', 'a', 'b', 'c', 'č', 'ć', 'd', 'đ', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 'š', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'ž', 'А', 'Б', 'В', 'Г', 'Ґ', 'Д', 'Ђ', 'Е', 'Ё', 'Є', 'Ж', 'З', 'Ѕ', 'И', 'І', 'Ї', 'Й', 'Ј', 'К', 'Л', 'Љ', 'М', 'Н', 'Њ', 'О', 'П', 'Р', 'С', 'Т', 'Ћ', 'У', 'Ў', 'Ф', 'Х', 'Ц', 'Ч', 'Џ', 'Ш', 'Щ', 'Ъ', 'Ы', 'Ь', 'Э', 'Ю', 'Я', 'а', 'б', 'в', 'г', 'ґ', 'д', 'ђ', 'е', 'ё', 'є', 'ж', 'з', 'ѕ', 'и', 'і', 'ї', 'й', 'ј', 'к', 'л', 'љ', 'м', 'н', 'њ', 'о', 'п', 'р', 'с', 'т', 'ћ', 'у', 'ў', 'ф', 'х', 'ц', 'ч', 'џ', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я', 'Ă', 'Â', 'Ê', 'Ô', 'Ơ', 'Ư', 'ă', 'â', 'ê', 'ô', 'ơ', 'ư', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '‘', '?', '’', '“', '!', '”', '(', '%', ')', '[', '#', ']', '{', '@', '}', '/', '&', '\/', '<', '-', '+', '÷', '×', '=', '>', '®', '©', '$', '€', '£', '¥', '¢', ':', ';', ',', '.', '*']
+        each char in chars
+          span= char
+
+    .col.col-third
+      section.resource-cards
+        a.resource-card.resource-card--round(target='_blank', href='https://fonts.google.com/specimen/Montserrat')
+          img(src='/images/vendor/google-font-logo.png')
+          span Montserrat on #[strong Google Font]
+        a.resource-card(target='_blank', href='#')
+          img(src='/images/vendor/sketch-logo.png')
+          span #[strong Sketch] Type Scale Token
+
+
+  .row
+    .col
+      section
+        small Montserrat bold 6.4rem* / 1 - Letter spacing: 0.025em.
+        .hero-text The quick brown fox jumps over the lazy dog
+        small Montserrat bold 3.8rem* / 1.2 - Letter spacing: 0.025em.
+        h1 The quick brown fox jumps over the lazy dog.
+        small Montserrat bold 3.2rem* / 1.2 - Letter spacing: 0.025em.
+        h2 The quick brown fox jumps over the lazy dog.
+        small Montserrat bold 2.8rem* / 1.2 - Letter spacing: 0.025em.
+        h3 The quick brown fox jumps over the lazy dog.
+        small Montserrat bold 2.4rem* / 1.4 - Letter spacing: 0.025em.
+        h4 The quick brown fox jumps over the lazy dog.
+        small Montserrat bold 2.2rem* / 1.4 - Letter spacing: 0.025em.
+        h5 The quick brown fox jumps over the lazy dog.
+        small Montserrat bold 2rem* / 1.4 - Letter spacing: 0.025em.
+        h6 The quick brown fox jumps over the lazy dog.
+
+    .col.col-third
+      section
+        small Montserrat regular 2.4rem* / 1.3 - Letter spacing: 0.025em.
+        .subheading-1 The quick brown fox jumps over the lazy dog.
+        small Montserrat regular 2.2rem* / 1.3 - Letter spacing: 0.025em.
+        .subheading-2 The quick brown fox jumps over the lazy dog.
+        small Montserrat regular 2rem* / 1.3 - Letter spacing: 0.025em.
+        .subheading-3 The quick brown fox jumps over the lazy dog.
+
+      section
+        small Montserrat regular 1.4rem* / 1.5 - Letter spacing: 0.025em.
+        p.
+          Pußenthron ist Quasten in Untermerk! Grönewitz kalvis hollertram
+          lenk osser prüsel topal schliban – Sanswort blind Text perplannen
+          pfrosin Gromek scherk.
+
+        p.
+          Gusen fertelman jerting Klamm geragen, hund Freserling hussental
+          men stark verbasen. Linden schon herting persch trupplin Frausen
+          querscheid missentang Vertranen bind.
+          #[strong Auch vend dren Chlosenfeind] nert dollerfen kullnatur presselbad montobadey.
+
+        p.
+          #[mark Wer Sodenperplax schind fromrsenmerz] und hinterfrun kelänterprain; auch vend dren Chlosenfeind nert dollerfen kullnatur
+          #[del presselbad montobadey]. In demen grundling #[em Esskaplosing], mas golden Herbel jim palinger.
+          Gell Rosentemp schonn trerbeldachs aber pasting holz wenn deshalb fälig.
+
+
+  .notes
+    .row
+      .col
+        p.
+          * All the dimensions expressed in rem unit must be related to the font-size of the root element of 62.5% #[strong (1rem = 10px; 10px / 16px = 62.5%)].

@@ -2,5 +2,6 @@
 .DS_Store
 .idea/
 .vscode/
-dist/
+playground-build/
 node_modules/
+dist/

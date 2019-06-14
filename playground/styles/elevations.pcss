@@ -1,0 +1,42 @@
+.elevated-boxes {
+  display: flex;
+  padding: 4.8rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--color-base100);
+
+  & > [class*='shadow-elevation' i] {
+    width: calc(100% / 3);
+    height: 16rem;
+    margin: 2rem;
+    position: relative;
+    background-color: var(--color-white);
+
+    h1 {
+      margin-right: 2.4rem;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.shadow-elevation-0dp:hover {
+  box-shadow: var(--shadow-elevation-1dp);
+}
+
+.shadow-elevation-1dp:hover {
+  box-shadow: var(--shadow-elevation-2dp);
+}
+
+.shadow-elevation-2dp:hover {
+  box-shadow: var(--shadow-elevation-3dp);
+}
+
+.shadow-elevation-3dp:hover {
+  box-shadow: var(--shadow-elevation-4dp);
+}
+
+.shadow-elevation-4dp:hover {
+  box-shadow: var(--shadow-elevation-5dp);
+}

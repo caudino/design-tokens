@@ -1,0 +1,29 @@
+mixin renderIntro(details)
+  .intro
+    h1.intro-title= details.title
+    p.intro-description= details.description
+
+mixin renderColorCards(colors)
+  each color in colors
+    div(class='color-card bgcolor-' + color.type)
+      strong= color.type
+      code= color.hex
+
+mixin renderIllustrations(illustrations)
+  each illustration in illustrations
+    - const SVG_PATH = '/illustrations/min/' + illustration + '.svg';
+    .row
+      .col
+        section.illustration-stage
+          img(src=SVG_PATH)
+
+      .col.col-third
+        section.resource-cards
+          a.resource-card(target='_blank', href=SVG_PATH)
+            img(src='/images/vendor/svg-logo.png')
+            span #{illustration} (<strong>.svg</strong>)
+
+mixin renderElevatedBox(elevations)
+  each elevation in elevations
+    div(class="shadow-transition shadow-elevation-" + elevation)
+      h1= elevation
