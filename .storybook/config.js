@@ -1,12 +1,10 @@
 import {addParameters, configure} from '@storybook/html';
 
-// import {
-//   CLAB_THEME
-// } from './theme/contactlab';
+import {CLAB_THEME} from './theme/contactlab';
 
 const STORYBOOK_CONFIG = {
   options: {
-    // theme: CLAB_THEME,
+    theme: CLAB_THEME,
     showPanel: false
   }
 };

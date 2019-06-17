@@ -14,7 +14,7 @@ import * as antd from './templates/design-system/antd.pug';
 import * as branding from './templates/design-system/branding.pug';
 import * as reactive from './templates/design-system/reactive.pug';
 
-storiesOf('Token Library', module)
+storiesOf('Design Tokens', module)
   .add('Colors', () => colors)
   .add('Elevations', () => elevations)
   .add('Illustrations', () => illustrations)

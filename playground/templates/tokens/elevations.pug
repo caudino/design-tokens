@@ -3,13 +3,13 @@ extends ../commons/layout.pug
 block config
   - const PAGE_TITLE = "The Elevation Token";
 
-block content
-
+block header
   +renderIntro({
     title: PAGE_TITLE,
     description: `One of the principles of our visual language is to have a three-dimensional space, within which the elements can be moved. But just like in the physical world, the various elements have properties that must be respected. They can be placed side by side, overlap or be positioned in a certain sequence, but they cannot pass through each other. It is also important to remember that objects cast shadows and reflect light. In adopting these principles, we have decided to create a model that is known to users and consistently applicable throughout our system.`
   })
 
+block content
   .row
     .col
       .elevated-boxes

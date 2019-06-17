@@ -3,19 +3,18 @@ extends ../commons/layout.pug
 block config
   - const PAGE_TITLE = "The Color Token";
 
-block content
-
+block header
   +renderIntro({
     title: PAGE_TITLE,
     description: `Colors are a very important means of communication in any visual language, and one of the most effective ways of transposing one or more concepts from one place to another. Our cold color palettes are designed to help users visually assimilate very technical and complex interfaces.`
   })
 
-
+block content
   .row
     .col.col-third
       h1 Base
       section.color-palette
-        - const baseColors = [{type: 'base100', hex: '#f7fcff'}, {type: 'base200', hex: '#deebf4'}, {type: 'base300', hex: '#c3d4e0'}, {type: 'base400', hex: '#9cb0bf'}, {type: 'base500', hex: '#7e96a8'}, {type: 'base600', hex: '#5b768c'}, {type: 'base700', hex: '#36546d'}, {type: 'base800', hex: '#36546d'}, {type: 'base900', hex: '#1d3344'}];
+        - const baseColors = [{type: 'base100', hex: '#f7fcff'}, {type: 'base200', hex: '#deebf4'}, {type: 'base300', hex: '#c3d4e0'}, {type: 'base400', hex: '#9cb0bf'}, {type: 'base500', hex: '#7e96a8'}, {type: 'base600', hex: '#5b768c'}, {type: 'base700', hex: '#36546d'}, {type: 'base800', hex: '#1d3344'}, {type: 'base900', hex: '#001420'}];
         +renderColorCards(baseColors)
 
       h1 Illustrations
