@@ -9,18 +9,18 @@ export const CLAB_THEME = create({
   colorPrimary: '#36546d',
   colorSecondary: '#36546d',
 
-  // // UI
+  // UI
   appBg: '#fff',
   appBorderColor: '#deebf4',
   appBorderRadius: 8,
   appContentBg: '#fff',
 
-  // // Typography
+  // Typography
   fontBase: '"Montserrat", sans-serif',
   fontCode:
     '"Inconsolata", "Consolas", "Monaco", "Andale Mono", "Ubuntu Mono", monospace',
 
-  // // Text colors
+  // Text colors
   textColor: '#36546d',
   textInverseColor: 'rgba(3, 145, 236, 0.7)',
 
