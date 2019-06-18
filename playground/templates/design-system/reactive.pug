@@ -1,0 +1,16 @@
+extends ../commons/layout.pug
+
+block config
+  - const PAGE_TITLE = "Reactive UI";
+
+block header
+  +renderIntro({
+    category: 'Design System',
+    title: PAGE_TITLE,
+    description: `In questa sezione presentiamo un modello per la gestione dell’interfaccia che combini le tecniche di responsive ed adaptive design che tratteremo di seguito. L’obiettivo di entrambe è quello di progettare un’esperienza di navigazione piacevole e funzionale da qualsiasi dispositivo.`
+  })
+
+block content
+  .row
+    .col.col-third
+      h2 Coming Soon

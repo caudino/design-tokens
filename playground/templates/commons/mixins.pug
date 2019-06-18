@@ -1,6 +1,7 @@
 mixin renderIntro(details)
   .intro
     h1.intro__title= details.title
+      span.subheading-3= details.category
     p.intro__description= details.description
 
 mixin renderColorCards(colors)
@@ -26,4 +27,4 @@ mixin renderIllustrations(illustrations)
 mixin renderElevatedBox(elevations)
   each elevation in elevations
     div(class="shadow-transition shadow-elevation-" + elevation)
-      h1= elevation
+      h2= elevation

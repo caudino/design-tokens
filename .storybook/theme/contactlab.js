@@ -2,7 +2,7 @@ import {create} from '@storybook/theming';
 
 export const CLAB_THEME = create({
   brandImage: 'https://svgshare.com/i/De4.svg',
-  brandTitle: 'Contactlab Design Tokens',
+  brandTitle: 'Contactlab Design Team',
 
   base: 'light',
 

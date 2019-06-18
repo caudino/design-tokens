@@ -40,7 +40,8 @@
   },
   "devDependencies": {
     "@babel/core": "7.4.5",
-    "@storybook/html": "5.1.7",
+    "@storybook/addon-notes": "5.1.8",
+    "@storybook/html": "5.1.8",
     "babel-loader": "8.0.6",
     "husky": "2.4.1",
     "np": "5.0.3",
@@ -50,6 +51,7 @@
     "pretty-quick": "1.11.1",
     "pug": "2.0.3",
     "pug-html-loader": "1.1.5",
+    "storybook-readme": "5.0.3",
     "stylelint-config-pack": "4.1.2",
     "svgo": "1.2.2"
   },

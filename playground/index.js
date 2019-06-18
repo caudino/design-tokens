@@ -3,16 +3,22 @@ import {storiesOf} from '@storybook/html';
 // --- Styles
 import './styles/main.pcss';
 
-// --- Tokens templates
-import * as colors from './templates/tokens/colors.pug';
-import * as elevations from './templates/tokens/elevations.pug';
-import * as illustrations from './templates/tokens/illustrations.pug';
-import * as typography from './templates/tokens/typography.pug';
+// --- Design Tokens Templates
+import * as colors from './templates/design-tokens/colors.pug';
+import * as elevations from './templates/design-tokens/elevations.pug';
+import * as illustrations from './templates/design-tokens/illustrations.pug';
+import * as typography from './templates/design-tokens/typography.pug';
 
-// --- Design system templates
-import * as antd from './templates/design-system/antd.pug';
-import * as branding from './templates/design-system/branding.pug';
-import * as reactive from './templates/design-system/reactive.pug';
+// --- Design Tokens Templates - Markdown
+// import colorNotes from './notes/design-tokens/colors.md';
+// import elevationNotes from './notes/design-tokens/elevations.md';
+// import illustrationNotes from './notes/design-tokens/illustrations.md';
+// import typographyNotes from './notes/design-tokens/typography.md';
+
+// --- Design System Templates
+import antd from './templates/design-system/antd.pug';
+import branding from './templates/design-system/branding.pug';
+import reactive from './templates/design-system/reactive.pug';
 
 storiesOf('Design Tokens', module)
   .add('Colors', () => colors)

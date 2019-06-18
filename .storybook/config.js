@@ -1,4 +1,4 @@
-import {addParameters, configure} from '@storybook/html';
+import {addDecorator, addParameters, configure} from '@storybook/html';
 
 import {CLAB_THEME} from './theme/contactlab';
 

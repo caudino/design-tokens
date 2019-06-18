@@ -16,15 +16,22 @@
 
 .intro {
   display: flex;
+  align-items: center;
 
   &__title,
   &__description {
+    margin-bottom: 0;
     padding: 2rem;
   }
 
   &__title {
-    margin-bottom: 0;
+    display: flex;
     flex: 0 0 25%;
+    flex-direction: column-reverse;
+  }
+
+  &__description {
+    flex-basis: auto;
   }
 }
 
