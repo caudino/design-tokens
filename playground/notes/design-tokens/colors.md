@@ -12,7 +12,7 @@ Description example.
 
 ## Base Colors
 
-| Preview                                                   | Type | Depth | Use in CSS             | Use in LESS        | Utility class        |
+| preview                                                   | type | depth | css usage              | less usage         | css-class            |
 | --------------------------------------------------------- | ---- | ----- | ---------------------- | ------------------ | -------------------- |
 | <div style="height:20px; background:#f7fcff">&nbsp;</div> | base | 100   | `var(--color-base100)` | `@colors[base100]` | `.[bg]color-base100` |
 | <div style="height:20px; background:#deebf4">&nbsp;</div> | base | 200   | `var(--color-base200)` | `@colors[base200]` | `.[bg]color-base200` |
@@ -28,7 +28,7 @@ Description example.
 
 ## Accent Colors
 
-| Preview                                                   | Type   | Depth | Use in CSS               | Use in LESS          | Utility class          |
+| preview                                                   | type   | depth | css usage                | less usage           | css-class              |
 | --------------------------------------------------------- | ------ | ----- | ------------------------ | -------------------- | ---------------------- |
 | <div style="height:20px; background:#bae1f9">&nbsp;</div> | accent | 100   | `var(--color-accent100)` | `@colors[accent100]` | `.[bg]color-accent100` |
 | <div style="height:20px; background:#8ccdf6">&nbsp;</div> | accent | 200   | `var(--color-accent200)` | `@colors[accent200]` | `.[bg]color-accent200` |
@@ -44,7 +44,7 @@ Description example.
 
 ## Illustration Colors
 
-| Preview                                                   | Type        | Depth | Use in CSS                    | Use in LESS               | Utility class               |
+| preview                                                   | type        | depth | css usage                     | less usage                | css-class                   |
 | --------------------------------------------------------- | ----------- | ----- | ----------------------------- | ------------------------- | --------------------------- |
 | <div style="height:20px; background:#e9e8ff">&nbsp;</div> | fluo-base   | 300   | `var(--color-fluo-base300)`   | `@colors[fluo-base300]`   | `.[bg]color-fluo-base300`   |
 | <div style="height:20px; background:#b4afff">&nbsp;</div> | fluo-base   | 600   | `var(--color-fluo-base600)`   | `@colors[fluo-base600]`   | `.[bg]color-fluo-base600`   |
@@ -57,7 +57,7 @@ Description example.
 
 ## Feedback Colors
 
-| Preview                                                   | Type    | Depth | Use in CSS             | Use in LESS        | Utility class        |
+| preview                                                   | type    | depth | css usage              | less usage         | css-class            |
 | --------------------------------------------------------- | ------- | ----- | ---------------------- | ------------------ | -------------------- |
 | <div style="height:20px; background:#53c518">&nbsp;</div> | success | -     | `var(--color-success)` | `@colors[success]` | `.[bg]color-success` |
 | <div style="height:20px; background:#ffb200">&nbsp;</div> | warning | -     | `var(--color-warning)` | `@colors[warning]` | `.[bg]color-warning` |
@@ -67,7 +67,7 @@ Description example.
 
 ## Neutral Colors
 
-| Preview                                                | Type  | Depth | Use in CSS           | Use in LESS      | Utility class      |
+| preview                                                | type  | depth | css usage            | less usage       | css-class          |
 | ------------------------------------------------------ | ----- | ----- | -------------------- | ---------------- | ------------------ |
 | <div style="height:20px; background:#000">&nbsp;</div> | black | -     | `var(--color-black)` | `@colors[black]` | `.[bg]color-black` |
 | <div style="height:20px; background:#fff">&nbsp;</div> | white | -     | `var(--color-white)` | `@colors[white]` | `.[bg]color-white` |
