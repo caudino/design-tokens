@@ -32,7 +32,7 @@ If you're using **[postcss-import](https://github.com/postcss/postcss-import)** 
 
 > **WARN:** Use Less.js `>=v3.5.0`
 
-If you're using **[less-loader](https://github.com/webpack-contrib/less-loader#webpack-resolver)**, webpack provides an advanced mechanism to resolve files:
+If you're using **[less-loader](https://github.com/webpack-contrib/less-loader#webpack-resolver)**, webpack provides an advanced mechanism to resolve files from `node_modules` folder:
 
 ```css
 @import '~@contactlab/design-tokens/lib/styles/colors/index.less';
