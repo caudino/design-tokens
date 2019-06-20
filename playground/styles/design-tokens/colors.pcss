@@ -5,22 +5,29 @@
 }
 
 .color-card {
+  display: flex;
   width: calc(100% / 2);
-  height: 6rem;
+  height: 8rem;
+  padding: 0.8rem 1.6rem;
   position: relative;
+  flex-direction: column;
+  justify-content: space-around;
 
-  strong,
-  code {
-    position: absolute;
-    left: 1.4rem;
+  &__title {
+    font-weight: bold;
   }
 
-  strong {
-    top: 0.8rem;
-  }
+  &__info {
+    a {
+      text-decoration: none;
+    }
 
-  code {
-    bottom: 0.8rem;
+    code + a[href^="https://www.colorbook.io/"] {
+      &::before {
+        content: '-';
+        margin: 0 0.5rem;
+      }
+    }
   }
 
   &[class*='bgcolor-base' i]:nth-last-child(-n + 6),
@@ -38,12 +45,15 @@
   &.bgcolor-base700,
   &.bgcolor-accent500,
   &.bgcolor-fluo-base900,
-  &.bgcolor-fluo-accent900,
+  &.bgcolor-fluo-accent900 {
+    width: 100%;
+    color: #fff;
+  }
+
   &.bgcolor-success,
   &.bgcolor-warning,
   &.bgcolor-error {
-    width: 100%;
-    color: #fff;
+    width: calc(100% / 3);
   }
 
   &.bgcolor-base700,
@@ -56,4 +66,8 @@
   &.bgcolor-fluo-accent600 {
     order: 1;
   }
+}
+
+.contrast-grid {
+  padding: 2rem;
 }

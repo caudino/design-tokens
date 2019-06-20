@@ -7,8 +7,10 @@ mixin renderIntro(details)
 mixin renderColorCards(colors)
   each color in colors
     div(class='color-card bgcolor-' + color.type)
-      strong= color.type
-      code= color.hex
+      .color-card__title= color.type
+      .color-card__info
+        code ##{color.hex}
+        a(href="https://www.colorbook.io/hexcolors/view/" + color.hex, target="_blank", rel="noopener noreferrer") Details
 
 mixin renderIllustrations(illustrations)
   each illustration in illustrations

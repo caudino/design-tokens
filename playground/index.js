@@ -10,10 +10,10 @@ import * as illustrations from './templates/design-tokens/illustrations.pug';
 import * as typography from './templates/design-tokens/typography.pug';
 
 // --- Design Tokens Templates - Markdown
-import colorNotes from './notes/design-tokens/colors.md';
-import elevationNotes from './notes/design-tokens/elevations.md';
-import illustrationNotes from './notes/design-tokens/illustrations.md';
-import typographyNotes from './notes/design-tokens/typography.md';
+import colorNotes from '../docs/design-tokens/colors.md';
+import elevationNotes from '../docs/design-tokens/elevations.md';
+import illustrationNotes from '../docs/design-tokens/illustrations.md';
+import typographyNotes from '../docs/design-tokens/typography.md';
 
 // --- Design System Templates
 import antd from './templates/design-system/antd.pug';

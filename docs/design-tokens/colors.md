@@ -22,7 +22,7 @@ yarn add @contactlab/design-tokens
 
 #### Using with PostCSS
 
-If you're using **[postcss-import](https://github.com/postcss/postcss-import)** (or a tool that uses it under the hood), use our imports:
+If you're using **[postcss-import](https://github.com/postcss/postcss-import)** (or a tool that uses it under the hood), import colors source:
 
 ```css
 @import '@contactlab/design-tokens/lib/styles/colors/index.pcss';
@@ -32,7 +32,7 @@ If you're using **[postcss-import](https://github.com/postcss/postcss-import)** 
 
 > **WARN:** Use Less.js `>=v3.5.0`
 
-If you're using **[less-loader](https://github.com/webpack-contrib/less-loader#webpack-resolver)**, webpack provides an advanced mechanism to resolve files from `node_modules` folder:
+If you're using Webpack and Less.js you can install **[less-loader](https://github.com/webpack-contrib/less-loader#webpack-resolver)**. Webpack provides an advanced mechanism to resolve files from `node_modules` folder:
 
 ```css
 @import '~@contactlab/design-tokens/lib/styles/colors/index.less';
@@ -40,7 +40,7 @@ If you're using **[less-loader](https://github.com/webpack-contrib/less-loader#w
 
 #### Using via CDN
 
-To pull in Contactlab Design Tokens for quick demos or just giving the framework a spin, grab the latest default configuration build via CDN:
+To pull in Contactlab Design Tokens for quick demos or prototyping, grab the latest default configuration build via CDN:
 
 ```html
 <link
@@ -98,8 +98,17 @@ To pull in Contactlab Design Tokens for quick demos or just giving the framework
 
 ## Feedbacks
 
-| preview                                                     | type    | depth | css usage              | less usage         | css classes           |
-| ----------------------------------------------------------- | ------- | ----- | ---------------------- | ------------------ | --------------------- |
-| ![#53c518](https://via.placeholder.com/50x25/53c518/53c518) | success | 500   | `var(--color-success)` | `@colors[success]` | `.(bg?)color-success` |
-| ![#ffb200](https://via.placeholder.com/50x25/ffb200/ffb200) | warning | 500   | `var(--color-warning)` | `@colors[warning]` | `.(bg?)color-warning` |
-| ![#fc192f](https://via.placeholder.com/50x25/fc192f/fc192f) | error   | 500   | `var(--color-error)`   | `@colors[error]`   | `.(bg?)color-error`   |
+| preview                                                     | type    | css usage              | less usage         | css classes           |
+| ----------------------------------------------------------- | ------- | ---------------------- | ------------------ | --------------------- |
+| ![#53c518](https://via.placeholder.com/50x25/53c518/53c518) | success | `var(--color-success)` | `@colors[success]` | `.(bg?)color-success` |
+| ![#ffb200](https://via.placeholder.com/50x25/ffb200/ffb200) | warning | `var(--color-warning)` | `@colors[warning]` | `.(bg?)color-warning` |
+| ![#fc192f](https://via.placeholder.com/50x25/fc192f/fc192f) | error   | `var(--color-error)`   | `@colors[error]`   | `.(bg?)color-error`   |
+
+---
+
+## Neutrals
+
+| preview                                            | type    | css usage            | less usage       | css classes         |
+| -------------------------------------------------- | ------- | -------------------- | ---------------- | ------------------- |
+| ![#fff](https://via.placeholder.com/50x25/fff/fff) | success | `var(--color-white)` | `@colors[white]` | `.(bg?)color-white` |
+| ![#000](https://via.placeholder.com/50x25/000/000) | warning | `var(--color-black)` | `@colors[black]` | `.(bg?)color-black` |
