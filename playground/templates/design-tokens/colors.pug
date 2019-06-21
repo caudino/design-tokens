@@ -1,7 +1,12 @@
 extends ../commons/layout.pug
 
 block config
-  - const PAGE_TITLE = "The Color Token";
+  - PAGE_TITLE = "The Color Token"
+  - var BASE_COLORS = [{hex: 'F7FCFF', background: 'base100', foreground: 'base800'}, {hex: 'DEEBF4', background: 'base200', foreground: 'base800'}, {hex: 'C9D5DD', background: 'base300', foreground: 'base900'}, {hex: 'ADBDC8', background: 'base400', foreground: 'base900'}, {hex: '92A5B2', background: 'base500', foreground: 'base900'}, {hex: '758B9A', background: 'base600', foreground: 'base100'}, {hex: '576E7D', background: 'base700', foreground: 'base100'}, {hex: '394E5C', background: 'base800', foreground: 'base100'}, {hex: '001420', background: 'base900', foreground: 'base300'}];
+  - var ACCENT_COLORS = [{hex: 'BAE1F9', background: 'accent100', foreground: 'accent800'}, {hex: '8CCDF6', background: 'accent200', foreground: 'accent900'}, {hex: '5EB9F2', background: 'accent300', foreground: 'accent900'}, {hex: '30A5EF', background: 'accent400', foreground: 'accent900'}, {hex: '0391EC', background: 'accent500', foreground: 'base100'}, {hex: '0072BC', background: 'accent600', foreground: 'base100'}, {hex: '025D97', background: 'accent700', foreground: 'base100'}, {hex: '02426C', background: 'accent800', foreground: 'accent100'}, {hex: '012841', background: 'accent900', foreground: 'accent100'}];
+  - var FLUO_COLORS = [{hex: 'E9E8FF', background: 'fluo-base300', foreground: 'black'}, {hex: 'B4AFFF', background: 'fluo-base600', foreground: 'black'}, {hex: '7168FF', background: 'fluo-base900', foreground: 'white'}, {hex: 'E1F9EF', background: 'fluo-accent300', foreground: 'black'}, {hex: '9BEDB0', background: 'fluo-accent600', foreground: 'black'}, {hex: '00C9BD', background: 'fluo-accent900', foreground: 'black'}];
+  - var FEEDBACK_COLORS = [{hex: '0391EC', background: 'info', foreground: 'base100'}, {hex: '53C518', background: 'success', foreground: 'black'}, {hex: 'FFB200', background: 'warning', foreground: 'black'}, {hex: 'FC192F', background: 'error', foreground: 'black'}, {hex: '000', background: 'black', foreground: 'base100'}, {hex: 'FFF', background: 'white', foreground: 'base700'}];
+
 
 block header
   +renderIntro({
@@ -11,47 +16,48 @@ block header
   })
 
 block content
-  .row
-    .col.col-third
+  .resource-cards(class="hidden lg:flex")
+    .col(class="w-1/3")
+      a.resource-card(target='_blank', href='')
+        img(src='/images/vendor/sketch-logo.png')
+        span Color Token (#[strong .sketch])
+    .col(class="w-1/3")
+      a.resource-card(target='_blank', href='')
+        img(src='/images/vendor/photoshop-logo.png')
+        span Color Token (#[strong .psd])
+    .col(class="w-1/3")
+      a.resource-card(target='_blank', href='')
+        img(src='/images/vendor/illustrator-logo.png')
+        span Color Token (#[strong .ai])
+
+  .flex.flex-wrap
+    div.col(class="w:full md:w-1/2")
       h2 Bases
       section.color-palette
-        - const baseColors = [{type: 'base100', hex: 'f7fcff'}, {type: 'base200', hex: 'deebf4'}, {type: 'base300', hex: 'c3d4e0'}, {type: 'base400', hex: '9cb0bf'}, {type: 'base500', hex: '7e96a8'}, {type: 'base600', hex: '5b768c'}, {type: 'base700', hex: '36546d'}, {type: 'base800', hex: '1d3344'}, {type: 'base900', hex: '001420'}];
-        +renderColorCards(baseColors)
+        +renderColorCards(BASE_COLORS)
 
       h2 Illustrations
       section.color-palette
-        - const fluoColors = [{type: 'fluo-base300', hex: 'e9e8ff'}, {type: 'fluo-base600', hex: 'b4afff'}, {type: 'fluo-base900', hex: '7168ff'}, {type: 'fluo-accent300', hex: 'e1f9ef'}, {type: 'fluo-accent600', hex: '9bebd0'}, {type: 'fluo-accent900', hex: '00c9bd'}];
-        +renderColorCards(fluoColors)
+        +renderColorCards(FLUO_COLORS)
+        p.color-palette__warning Illustrations color palette is reserved for Contactlab Marketing Cloud artworks.
 
-
-    .col.col-third
+    div.col(class="w:full md:w-1/2")
       h2 Accents
       section.color-palette
-        - const accentColors = [{type: 'accent100', hex: 'bae1f9'}, {type: 'accent200', hex: '8ccdf6'}, {type: 'accent300', hex: '5eb9f2'}, {type: 'accent400', hex: '30a5ef'}, {type: 'accent500', hex: '0391ec'}, {type: 'accent600', hex: '0072bc'}, {type: 'accent700', hex: '025d97'}, {type: 'accent800', hex: '02426c'}, {type: 'accent900', hex: '012841'}];
-        +renderColorCards(accentColors)
+        +renderColorCards(ACCENT_COLORS)
 
-      h2 Feedbacks
+      h2
+        span(class="hidden lg:block") Feedbacks & Neutrals
+        span(class="lg:hidden") Others
       section.color-palette
-        - const feedbackColors = [{type: 'success', hex: '53c518'}, {type: 'warning', hex: 'ffb200'}, {type: 'error', hex: 'fc192f'}];
-        +renderColorCards(feedbackColors)
-
-
-    .col.col-third
-      section.resource-cards
-        a.resource-card(target='_blank', href='')
-          img(src='/images/vendor/sketch-logo.png')
-          span Color Token (#[strong .sketch])
-
-        a.resource-card(target='_blank', href='')
-          img(src='/images/vendor/photoshop-logo.png')
-          span Color Token (#[strong .psd])
-
-        a.resource-card(target='_blank', href='')
-          img(src='/images/vendor/illustrator-logo.png')
-          span Color Token (#[strong .ai])
-
+        +renderColorCards(FEEDBACK_COLORS)
 
   .contrast-grid
     h2 Color Contrast Grid
-    .subheading-3 Thanks to []
-    include ../../assets/misc/color-contrast-grid.html
+    section
+      p.contrast-grid__description.
+        Test #[strong Contactlab Design Tokens] foreground and background color combos for compliance with <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" target="_blank" rel="noopener noreferrer">WCAG 2.0 minimum contrast</a>.
+        #[br]
+        Thanks to <a href="https://eightshapes.com/design-systems.html" target="_blank" rel="noopener noreferrer">Eightshapes</a> for the awesome Grid.
+
+      include ../../assets/misc/color-contrast-grid.html

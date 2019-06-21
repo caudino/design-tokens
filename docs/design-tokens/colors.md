@@ -100,6 +100,7 @@ To pull in Contactlab Design Tokens for quick demos or prototyping, grab the lat
 
 | preview                                                     | type    | css usage              | less usage         | css classes           |
 | ----------------------------------------------------------- | ------- | ---------------------- | ------------------ | --------------------- |
+| ![#0391ec](https://via.placeholder.com/50x25/0391ec/0391ec) | info    | `var(--color-info)`    | `@colors[info]`    | `.(bg?)color-info`    |
 | ![#53c518](https://via.placeholder.com/50x25/53c518/53c518) | success | `var(--color-success)` | `@colors[success]` | `.(bg?)color-success` |
 | ![#ffb200](https://via.placeholder.com/50x25/ffb200/ffb200) | warning | `var(--color-warning)` | `@colors[warning]` | `.(bg?)color-warning` |
 | ![#fc192f](https://via.placeholder.com/50x25/fc192f/fc192f) | error   | `var(--color-error)`   | `@colors[error]`   | `.(bg?)color-error`   |
@@ -110,5 +111,5 @@ To pull in Contactlab Design Tokens for quick demos or prototyping, grab the lat
 
 | preview                                            | type    | css usage            | less usage       | css classes         |
 | -------------------------------------------------- | ------- | -------------------- | ---------------- | ------------------- |
-| ![#fff](https://via.placeholder.com/50x25/fff/fff) | success | `var(--color-white)` | `@colors[white]` | `.(bg?)color-white` |
 | ![#000](https://via.placeholder.com/50x25/000/000) | warning | `var(--color-black)` | `@colors[black]` | `.(bg?)color-black` |
+| ![#fff](https://via.placeholder.com/50x25/fff/fff) | success | `var(--color-white)` | `@colors[white]` | `.(bg?)color-white` |

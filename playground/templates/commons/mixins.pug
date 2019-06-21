@@ -1,16 +1,17 @@
 mixin renderIntro(details)
-  .intro
-    h1.intro__title= details.title
+  .intro(class="flex flex-wrap")
+    h1.intro__title(class="w-full md:w-1/3")= details.title
       span.subheading-3= details.category
-    p.intro__description= details.description
+    p.intro__description(class="w-full md:w-1/2")= details.description
 
 mixin renderColorCards(colors)
   each color in colors
-    div(class='color-card bgcolor-' + color.type)
-      .color-card__title= color.type
+    div(class='color-card bgcolor-' + color.background + ' color-' + color.foreground)
+      .color-card__title
+        span.truncate <strong>#{color.background}</strong> (##{color.hex})
+        span #{color.foreground} (text)
       .color-card__info
-        code ##{color.hex}
-        a(href="https://www.colorbook.io/hexcolors/view/" + color.hex, target="_blank", rel="noopener noreferrer") Details
+        a(href="https://www.colorbook.io/hexcolors/view/" + color.hex, target="_blank", rel="noopener noreferrer") View details
 
 mixin renderIllustrations(illustrations)
   each illustration in illustrations
