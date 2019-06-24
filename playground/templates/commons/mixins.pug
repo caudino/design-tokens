@@ -16,12 +16,12 @@ mixin renderColorCards(colors)
 mixin renderIllustrations(illustrations)
   each illustration in illustrations
     - const SVG_PATH = '/illustrations/min/' + illustration + '.svg';
-    .row
-      .col
+    .flex
+      .col(class="flex-auto")
         section.illustration-stage
           img(src=SVG_PATH)
 
-      .col.col-third
+      .col(class="hidden lg:block w-1/4")
         section.resource-cards
           a.resource-card(target='_blank', href=SVG_PATH)
             img(src='/images/vendor/svg-logo.png')
@@ -29,5 +29,5 @@ mixin renderIllustrations(illustrations)
 
 mixin renderElevatedBox(elevations)
   each elevation in elevations
-    div(class="shadow-transition shadow-elevation-" + elevation)
-      h2= elevation
+    div(class="elevation-transition elevation-" + elevation.depth + 'dp')
+      h2 #{elevation.depth}dp

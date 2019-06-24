@@ -8,12 +8,12 @@
 
 @import '../../elevations/index.pcss';
 
-.shadow-transition {
-  transition: var(--shadow-transition);
+.elevation-transition {
+  transition: var(--elevation-transition);
 }
 
 @each $type in 1dp, 2dp, 3dp, 4dp, 5dp {
-  .shadow-elevation-$(type) {
-    box-shadow: var(--shadow-elevation-$(type));
+  .elevation-$(type) {
+    box-shadow: var(--elevation-$(type));
   }
 }

@@ -1,7 +1,7 @@
 extends ../commons/layout.pug
 
 block config
-  - const PAGE_TITLE = "The Type Token";
+  - const PAGE_TITLE = "The Typography Token";
 
 block header
   +renderIntro({
@@ -22,7 +22,7 @@ block content
           span= char
 
     .resource-cards(class="hidden lg:block w-1/4")
-      a.resource-card(target='_blank', href='')
+      a.resource-card.resource-card--round(target='_blank', href='')
         img(src='/images/vendor/google-font-logo.png')
         span Montserrat on #[strong Google Font]
 

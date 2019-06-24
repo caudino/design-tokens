@@ -1,4 +1,4 @@
-# Colors
+# The Color Token
 
 ---
 
@@ -6,7 +6,7 @@
 
 ### Install Contactlab Design Tokens via npm
 
-For most projects (and to take advantage of Token's customization features), you'll want to install Contactlab Design Token via npm.
+For most projects (and to take advantage of Contactlab Design Token's customization features), you'll want to install Contactlab Design Token via npm.
 
 ```sh
 # Using npm

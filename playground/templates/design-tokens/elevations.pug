@@ -11,16 +11,16 @@ block header
   })
 
 block content
-  .row
-    .col
+  .flex
+    .col(class="flex-auto")
       .elevated-boxes
-        - const elevations = ['0dp', '1dp', '2dp', '3dp', '4dp', '5dp'];
+        - const elevations = [{depth: 0}, {depth: 1}, {depth: 2}, {depth: 3}, {depth: 4}, {depth: 5}];
         +renderElevatedBox(elevations)
 
-    .col.col-third
+    .col(class="hidden lg:block w-1/4")
       section.resource-cards
         a.resource-card(target='_blank', href='')
           img(src='/images/vendor/sketch-logo.png')
-          span Elevation Token (#[strong .sketch])
+          span The Elevation Token (#[strong .sketch])
 
 
