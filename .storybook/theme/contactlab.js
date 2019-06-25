@@ -1,19 +1,19 @@
 import {create} from '@storybook/theming';
 
 export const CLAB_THEME = create({
-  brandImage: 'https://svgshare.com/i/De4.svg',
+  brandImage: 'https://svgshare.com/i/DrV.svg',
   brandTitle: 'Contactlab Design Team',
 
   base: 'light',
 
-  colorPrimary: '#36546d',
-  colorSecondary: '#36546d',
+  colorPrimary: '#001420',
+  colorSecondary: '#0391EC',
 
   // UI
-  appBg: '#fff',
-  appBorderColor: '#deebf4',
+  appBg: '#F7FCFF',
+  appBorderColor: '#DEEBF4',
   appBorderRadius: 8,
-  appContentBg: '#fff',
+  appContentBg: '#FFF',
 
   // Typography
   fontBase: '"Montserrat", sans-serif',
@@ -21,17 +21,17 @@ export const CLAB_THEME = create({
     '"Inconsolata", "Consolas", "Monaco", "Andale Mono", "Ubuntu Mono", monospace',
 
   // Text colors
-  textColor: '#36546d',
+  textColor: '#001420',
   textInverseColor: 'rgba(3, 145, 236, 0.7)',
 
   // Toolbar default and active colors
-  barBg: '#fff',
-  barSelectedColor: '#1d3344',
-  barTextColor: '#7e96a8',
+  barBg: '#FFF',
+  barSelectedColor: '#0391EC',
+  barTextColor: '#92A5B2',
 
   // Form colors
-  inputBg: '#ƒff',
-  inputBorder: '#deebf4',
+  inputBg: '#FFF',
+  inputBorder: '#DEEBF4',
   inputBorderRadius: 8,
-  inputTextColor: '#36546d'
+  inputTextColor: '#001420'
 });

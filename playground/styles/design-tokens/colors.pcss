@@ -22,27 +22,33 @@
   &__title {
     span {
       display: block;
+    }
 
-      &:first-of-type {
-        font-size: 16px;
-      }
+    span:first-of-type {
+      font-size: 16px;
     }
   }
 
   &__info {
-    a[href^="https://www.colorbook.io/"] {
-      text-decoration: underline;
+    font-size: 12px;
+
+    .link-arrowed {
+      color: inherit;
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
 
-  &.bgcolor-base700,
+  &.bgcolor-base900,
   &.bgcolor-accent500,
   &.bgcolor-fluo-base900,
   &.bgcolor-fluo-accent900 {
     width: 100%;
   }
 
-  &.bgcolor-base700,
+  &.bgcolor-base900,
   &.bgcolor-accent500,
   &.bgcolor-fluo-base900 {
     order: -1;

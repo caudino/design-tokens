@@ -53,15 +53,15 @@ To pull in Contactlab Design Tokens for quick demos or prototyping, grab the lat
 
 ## Headings
 
-| type      | font-size\* | line-height | margin-bottom\* | css usage    |
-| --------- | ----------- | ----------- | --------------- | ------------ |
-| Hero Text | 6.4rem      | 1em         | 2.6rem          | `.hero-text` |
-| Heading 1 | 3.8rem      | 1.2em       | 2.4rem          | global       |
-| Heading 2 | 3.2rem      | 1.2em       | 2.2rem          | global       |
-| Heading 3 | 2.8rem      | 1.2em       | 2rem            | global       |
-| Heading 4 | 2.4rem      | 1.4em       | 1.8rem          | global       |
-| Heading 5 | 2.2rem      | 1.4em       | 1.6rem          | global       |
-| Heading 6 | 2rem        | 1.4em       | 1.4rem          | global       |
+| type      | font-family              | font-size\* | line-height | margin-bottom\* | color   | css usage    |
+| --------- | ------------------------ | ----------- | ----------- | --------------- | ------- | ------------ |
+| Hero Text | "Montserrat", sans-serif | 6.4rem      | 1em         | 2.6rem          | base800 | `.hero-text` |
+| Heading 1 | "Montserrat", sans-serif | 3.8rem      | 1.2em       | 2.4rem          | base800 | global       |
+| Heading 2 | "Montserrat", sans-serif | 3.2rem      | 1.2em       | 2.2rem          | base800 | global       |
+| Heading 3 | "Montserrat", sans-serif | 2.8rem      | 1.2em       | 2rem            | base800 | global       |
+| Heading 4 | "Montserrat", sans-serif | 2.4rem      | 1.4em       | 1.8rem          | base800 | global       |
+| Heading 5 | "Montserrat", sans-serif | 2.2rem      | 1.4em       | 1.6rem          | base800 | global       |
+| Heading 6 | "Montserrat", sans-serif | 2rem        | 1.4em       | 1.4rem          | base800 | global       |
 
 > \*All the dimensions expressed in rem unit must be related to the font-size of the root element of 62.5% (1rem = 10px; 10px / 16px = 62.5%).
 
@@ -69,10 +69,22 @@ To pull in Contactlab Design Tokens for quick demos or prototyping, grab the lat
 
 ## SubHeadings
 
-| type         | font-size\* | line-height | margin-bottom\* | css usage       |
-| ------------ | ----------- | ----------- | --------------- | --------------- |
-| SubHeading 1 | 2.2rem      | 1.3em       | 1.6rem          | `.subheading-1` |
-| SubHeading 2 | 2rem        | 1.3em       | 1.4rem          | `.subheading-2` |
-| SubHeading 3 | 1.8rem      | 1.3em       | 1.2rem          | `.subheading-3` |
+| type         | font-family              | font-size\* | line-height | margin-bottom\* | color   | css usage       |
+| ------------ | ------------------------ | ----------- | ----------- | --------------- | ------- | --------------- |
+| SubHeading 1 | "Montserrat", sans-serif | 2.2rem      | 1.3em       | 1.6rem          | base700 | `.subheading-1` |
+| SubHeading 2 | "Montserrat", sans-serif | 2rem        | 1.3em       | 1.4rem          | base700 | `.subheading-2` |
+| SubHeading 3 | "Montserrat", sans-serif | 1.8rem      | 1.3em       | 1.2rem          | base700 | `.subheading-3` |
+
+> \*All the dimensions expressed in rem unit must be related to the font-size of the root element of 62.5% (1rem = 10px; 10px / 16px = 62.5%).
+
+---
+
+## Others
+
+| type      | font-family                                                                  | font-size\* | line-height | margin-bottom\* | color   | css usage |
+| --------- | ---------------------------------------------------------------------------- | ----------- | ----------- | --------------- | ------- | --------- |
+| Paragraph | "Montserrat", sans-serif                                                     | 1.4rem      | 1.5em       | 1.4rem          | base900 | global    |
+| Small     | "Montserrat", sans-serif                                                     | 1.2rem      | 1.4em       | none            | base600 | global    |
+| Code      | "Inconsolata", "Consolas", "Monaco", "Andale Mono", "Ubuntu Mono", monospace | 1.5em       | 1.4rem      | none            | inherit | global    |
 
 > \*All the dimensions expressed in rem unit must be related to the font-size of the root element of 62.5% (1rem = 10px; 10px / 16px = 62.5%).

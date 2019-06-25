@@ -1,4 +1,3 @@
 *.html
 **/vendors/*.pcss
-**/vendors/*.scss
 **/vendors/*.less

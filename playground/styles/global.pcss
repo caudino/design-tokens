@@ -2,7 +2,7 @@
   padding-top: 2rem;
   padding-bottom: 8rem;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  background-color: var(--color-base100);
+  background-color: var(--color-base800);
 }
 
 .intro,
@@ -13,15 +13,18 @@
 }
 
 .intro {
-  align-items: flex-start;
-
-  &__title,
+  &__bread,
   &__description {
-    margin-bottom: 0;
-    padding: 2rem;
+    padding: 0 2rem;
   }
 
-  &__title {
+  &__title,
+  &__category,
+  &__description {
+    color: var(--color-base100);
+  }
+
+  &__bread {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -38,43 +41,52 @@
 
   small {
     display: block;
-    margin-bottom: 0.5rem;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+
+    &:first-of-type {
+      padding-top: 0;
+    }
   }
 }
 
-.resource-card {
-  display: block;
+.resource-box {
   overflow: hidden;
   width: 100%;
   border-radius: 0.5rem;
   padding: 1.4rem 1.8rem;
   padding-left: 6.5rem;
   position: relative;
+  color: var(--color-base700);
   box-shadow: var(--elevation-1dp);
-  text-decoration: none;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   transition: var(--elevation-transition);
   cursor: pointer;
 
   & + & {
-    margin-top: 2.8rem;
+    margin-top: 2rem;
   }
 
   &:hover {
     box-shadow: var(--elevation-2dp);
   }
 
-  img {
+  a {
+    color: var(--color-base700);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__icon {
     display: inline-block;
-    height: 28px;
+    width: 30px;
+    height: 30px;
     position: absolute;
     top: 50%;
     left: 3.5rem;
     transform: translate(-50%, -50%);
   }
 
-  &--round img {
+  &__icon[alt~='google-font' i] {
     border-radius: 50%;
   }
 }
@@ -84,4 +96,36 @@
   color: var(--color-base600);
   font-size: 1.2rem;
   line-height: 1.4em;
+}
+
+.link-arrowed {
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 3px;
+  color: var(--color-accent);
+  background-color: transparent;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: 1;
+  white-space: nowrap;
+  transition: color 0.2s;
+  cursor: pointer;
+
+  & > span {
+    margin-left: 2px;
+    transition: margin-left 0.2s;
+  }
+
+  &:hover {
+    color: var(--color-accent700);
+
+    span {
+      margin-left: 6px;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
 }

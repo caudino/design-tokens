@@ -18,9 +18,11 @@ block content
         +renderElevatedBox(elevations)
 
     .col(class="hidden lg:block w-1/4")
-      section.resource-cards
-        a.resource-card(target='_blank', href='')
-          img(src='/images/vendor/sketch-logo.png')
-          span The Elevation Token (#[strong .sketch])
+      section.resources
+        +renderResourceButton({
+          src: '#',
+          icon: 'sketch',
+          label: 'The Elevation Token'
+        })
 
 

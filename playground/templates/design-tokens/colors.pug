@@ -2,10 +2,10 @@ extends ../commons/layout.pug
 
 block config
   - PAGE_TITLE = "The Color Token"
-  - var BASE_COLORS = [{hex: 'F7FCFF', background: 'base100', foreground: 'base800'}, {hex: 'DEEBF4', background: 'base200', foreground: 'base800'}, {hex: 'C9D5DD', background: 'base300', foreground: 'base900'}, {hex: 'ADBDC8', background: 'base400', foreground: 'base900'}, {hex: '92A5B2', background: 'base500', foreground: 'base900'}, {hex: '758B9A', background: 'base600', foreground: 'base100'}, {hex: '576E7D', background: 'base700', foreground: 'base100'}, {hex: '394E5C', background: 'base800', foreground: 'base100'}, {hex: '001420', background: 'base900', foreground: 'base300'}];
-  - var ACCENT_COLORS = [{hex: 'BAE1F9', background: 'accent100', foreground: 'accent800'}, {hex: '8CCDF6', background: 'accent200', foreground: 'accent900'}, {hex: '5EB9F2', background: 'accent300', foreground: 'accent900'}, {hex: '30A5EF', background: 'accent400', foreground: 'accent900'}, {hex: '0391EC', background: 'accent500', foreground: 'base100'}, {hex: '0072BC', background: 'accent600', foreground: 'base100'}, {hex: '025D97', background: 'accent700', foreground: 'base100'}, {hex: '02426C', background: 'accent800', foreground: 'accent100'}, {hex: '012841', background: 'accent900', foreground: 'accent100'}];
-  - var FLUO_COLORS = [{hex: 'E9E8FF', background: 'fluo-base300', foreground: 'black'}, {hex: 'B4AFFF', background: 'fluo-base600', foreground: 'black'}, {hex: '7168FF', background: 'fluo-base900', foreground: 'white'}, {hex: 'E1F9EF', background: 'fluo-accent300', foreground: 'black'}, {hex: '9BEDB0', background: 'fluo-accent600', foreground: 'black'}, {hex: '00C9BD', background: 'fluo-accent900', foreground: 'black'}];
-  - var FEEDBACK_COLORS = [{hex: '0391EC', background: 'info', foreground: 'base100'}, {hex: '53C518', background: 'success', foreground: 'black'}, {hex: 'FFB200', background: 'warning', foreground: 'black'}, {hex: 'FC192F', background: 'error', foreground: 'black'}, {hex: '000', background: 'black', foreground: 'base100'}, {hex: 'FFF', background: 'white', foreground: 'base700'}];
+  - const BASE_COLORS = [{hex: 'F7FCFF', background: 'base100', foreground: 'base800'}, {hex: 'DEEBF4', background: 'base200', foreground: 'base800'}, {hex: 'C9D5DD', background: 'base300', foreground: 'base900'}, {hex: 'ADBDC8', background: 'base400', foreground: 'base900'}, {hex: '92A5B2', background: 'base500', foreground: 'base900'}, {hex: '758B9A', background: 'base600', foreground: 'base100'}, {hex: '576E7D', background: 'base700', foreground: 'base100'}, {hex: '394E5C', background: 'base800', foreground: 'base100'}, {hex: '001420', background: 'base900', foreground: 'base200'}]
+  - const ACCENT_COLORS = [{hex: 'BAE1F9', background: 'accent100', foreground: 'accent800'}, {hex: '8CCDF6', background: 'accent200', foreground: 'accent900'}, {hex: '5EB9F2', background: 'accent300', foreground: 'accent900'}, {hex: '30A5EF', background: 'accent400', foreground: 'accent900'}, {hex: '0391EC', background: 'accent500', foreground: 'base100'}, {hex: '0072BC', background: 'accent600', foreground: 'base100'}, {hex: '025D97', background: 'accent700', foreground: 'base100'}, {hex: '02426C', background: 'accent800', foreground: 'accent100'}, {hex: '012841', background: 'accent900', foreground: 'accent100'}]
+  - const FLUO_COLORS = [{hex: 'E9E8FF', background: 'fluo-base300', foreground: 'black'}, {hex: 'B4AFFF', background: 'fluo-base600', foreground: 'black'}, {hex: '7168FF', background: 'fluo-base900', foreground: 'white'}, {hex: 'E1F9EF', background: 'fluo-accent300', foreground: 'black'}, {hex: '9BEDB0', background: 'fluo-accent600', foreground: 'black'}, {hex: '00C9BD', background: 'fluo-accent900', foreground: 'black'}]
+  - const FEEDBACK_COLORS = [{hex: '0391EC', background: 'info', foreground: 'base100'}, {hex: '53C518', background: 'success', foreground: 'black'}, {hex: 'FFB200', background: 'warning', foreground: 'black'}, {hex: 'FC192F', background: 'error', foreground: 'black'}, {hex: '000', background: 'black', foreground: 'base100'}, {hex: 'FFF', background: 'white', foreground: 'base700'}]
 
 
 block header
@@ -16,19 +16,25 @@ block header
   })
 
 block content
-  .resource-cards(class="hidden lg:flex")
+  .resources(class="hidden lg:flex")
     .col(class="w-1/3")
-      a.resource-card(target='_blank', href='')
-        img(src='/images/vendor/sketch-logo.png')
-        span Color Token (#[strong .sketch])
+      +renderResourceButton({
+        src: '#',
+        icon: 'sketch',
+        label: 'Color Token'
+      })
     .col(class="w-1/3")
-      a.resource-card(target='_blank', href='')
-        img(src='/images/vendor/photoshop-logo.png')
-        span Color Token (#[strong .psd])
+      +renderResourceButton({
+        src: '#',
+        icon: 'photoshop',
+        label: 'Color Token'
+      })
     .col(class="w-1/3")
-      a.resource-card(target='_blank', href='')
-        img(src='/images/vendor/illustrator-logo.png')
-        span Color Token (#[strong .ai])
+      +renderResourceButton({
+        src: '#',
+        icon: 'illustrator',
+        label: 'Color Token'
+      })
 
   .flex.flex-wrap
     .col(class="lg:w-1/2")
@@ -57,7 +63,7 @@ block content
     section
       p.contrast-grid__description.
         Test #[strong Contactlab Design Tokens] foreground and background color combos for compliance with <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" target="_blank" rel="noopener noreferrer">WCAG 2.0 minimum contrast</a>.
-        #[br]
+        <br>
         Thanks to <a href="https://eightshapes.com/design-systems.html" target="_blank" rel="noopener noreferrer">Eightshapes</a> for the awesome Grid.
 
       include ../../assets/misc/color-contrast-grid.html
