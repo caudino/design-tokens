@@ -1,6 +1,7 @@
-.cache
+.cache/
+.coverage/
 .DS_Store
 .idea/
-playground-build/
-node_modules/
 dist/
+node_modules/
+playground-build/
