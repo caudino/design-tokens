@@ -26,12 +26,12 @@ export const CLAB_THEME = create({
 
   // Toolbar default and active colors
   barBg: '#FFF',
-  barSelectedColor: '#0391EC',
+  barSelectedColor: '#394E5C',
   barTextColor: '#92A5B2',
 
   // Form colors
   inputBg: '#FFF',
   inputBorder: '#DEEBF4',
   inputBorderRadius: 8,
-  inputTextColor: '#001420'
+  inputTextColor: '#001420',
 });

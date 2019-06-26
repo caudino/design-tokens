@@ -19,21 +19,24 @@ block content
   .resources(class="hidden lg:flex")
     .col(class="w-1/3")
       +renderResourceButton({
-        src: '#',
+        src: '/resources/sketch/colors.sketch',
         icon: 'sketch',
-        label: 'Color Token'
+        label: 'Color Token (.sketch)',
+        download: true
       })
     .col(class="w-1/3")
       +renderResourceButton({
-        src: '#',
+        src: '/resources/psd/colors.psd',
         icon: 'photoshop',
-        label: 'Color Token'
+        label: 'Color Token (.psd)',
+        download: true
       })
     .col(class="w-1/3")
       +renderResourceButton({
-        src: '#',
+        src: '/resources/ai/colors.ai',
         icon: 'illustrator',
-        label: 'Color Token'
+        label: 'Color Token (.ai)',
+        download: true
       })
 
   .flex.flex-wrap

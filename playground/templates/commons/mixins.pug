@@ -18,8 +18,9 @@ mixin renderColorCards(colors)
 
 //--- Resource button
 mixin renderResourceButton(details)
+  - const download = details.download ? details.label : false
   .resource-box
-    a.resource-box__link(href=details.src, target='_blank', rel="noopener noreferrer")
+    a.resource-box__link(href=details.src, target='_blank', rel="noopener noreferrer", download=download)
       img(src='/images/vendor/' + details.icon + '-logo.png', class="resource-box__icon", alt=details.icon + ' file')
       span!= details.label
 
@@ -44,10 +45,12 @@ mixin renderIllustrations(illustrations)
           +renderResourceButton({
             src: SVG_PATH,
             icon: 'svg',
-            label: illustration
+            label: illustration,
+            download: true
           })
           +renderResourceButton({
             src: SVG_MIN_PATH,
             icon: 'svg',
-            label: illustration + '<strong> (minified)</strong>'
+            label: illustration + '<strong> (minified)</strong>',
+            download: true
           })
