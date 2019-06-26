@@ -18,21 +18,21 @@ import * as typography from './templates/design-tokens/typography.pug';
 storiesOf('Design Tokens', module)
   .add('Colors', () => colors, {
     notes: {
-      markdown: colorNotes
-    }
+      markdown: colorNotes,
+    },
   })
   .add('Elevations', () => elevations, {
     notes: {
-      markdown: elevationNotes
-    }
+      markdown: elevationNotes,
+    },
   })
   .add('Illustrations', () => illustrations, {
     notes: {
-      markdown: illustrationNotes
-    }
+      markdown: illustrationNotes,
+    },
   })
   .add('Typography', () => typography, {
     notes: {
-      markdown: typographyNotes
-    }
+      markdown: typographyNotes,
+    },
   });
