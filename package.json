@@ -32,7 +32,7 @@
   "scripts": {
     "prettify": "prettier --write \"**/*.{html,pcss,less}\" --ignore-path .gitignore",
     "lint:css": "stylelint ./**/*.{pcss,less}",
-    "lint:js": "xo",
+    "lint:js": "eslint .",
     "test": "run-s lint:*",
     "build:css": "postcss ./lib/styles/{colors,resets,typography}/*.pcss --base ./lib/styles --dir ./lib/styles --ext css",
     "build:svg": "svgo --folder ./lib/illustrations/ --output ./lib/illustrations/min/ --disable inlineStyles",
@@ -40,19 +40,24 @@
     "start": "start-storybook --static-dir ./lib,./playground/assets --port 9001",
     "release": "run-s -cln test build np"
   },
-  "xo": {
-    "space": true,
-    "prettier": true,
-    "env": [
-      "jest",
-      "node"
-    ]
+  "dependencies": {
+    "@storybook/addon-notes": "5.1.9",
+    "@storybook/html": "5.1.9"
   },
   "devDependencies": {
     "@babel/core": "7.4.5",
-    "@storybook/addon-notes": "5.1.9",
-    "@storybook/html": "5.1.9",
+    "babel-eslint": "9.0.0",
     "babel-loader": "8.0.6",
+    "eslint": "5.16.0",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-config-prettier": "4.3.0",
+    "eslint-config-wesbos": "0.0.19",
+    "eslint-plugin-html": "5.0.5",
+    "eslint-plugin-import": "2.18.0",
+    "eslint-plugin-jsx-a11y": "6.2.1",
+    "eslint-plugin-prettier": "3.1.0",
+    "eslint-plugin-react": "7.14.2",
+    "eslint-plugin-react-hooks": "1.6.1",
     "github-markdown-css": "3.0.1",
     "husky": "2.4.1",
     "np": "5.0.3",
@@ -63,8 +68,7 @@
     "pug": "2.0.4",
     "pug-html-loader": "1.1.5",
     "stylelint-config-pack": "4.1.2",
-    "svgo": "1.2.2",
-    "xo": "0.24.0"
+    "svgo": "1.2.2"
   },
   "keywords": [
     "contactlab",
