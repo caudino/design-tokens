@@ -1,7 +1,6 @@
 .cache
 .DS_Store
 .idea/
-.vscode/
 playground-build/
 node_modules/
 dist/
